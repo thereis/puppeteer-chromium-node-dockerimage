@@ -7,3 +7,5 @@ RUN apt-get update && apt-get install -y \
     libxkbcommon-x11-0
 
 RUN rm -rf /var/lib/apt/lists/*
+
+ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium
